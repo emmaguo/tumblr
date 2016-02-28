@@ -20,6 +20,7 @@
 		7E0115351C829C3100ED932C /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0115341C829C3100ED932C /* TrendingViewController.swift */; };
 		7E0115381C82AF2D00ED932C /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0115361C82AF2D00ED932C /* BaseTransition.swift */; };
 		7E0115391C82AF2D00ED932C /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0115371C82AF2D00ED932C /* FadeTransition.swift */; };
+		7E01153B1C82D90500ED932C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E01153A1C82D90500ED932C /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		7E0115341C829C3100ED932C /* TrendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 		7E0115361C82AF2D00ED932C /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
 		7E0115371C82AF2D00ED932C /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		7E01153A1C82D90500ED932C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				7E0115301C82868B00ED932C /* ComposeViewController.swift */,
 				7E01152E1C82862400ED932C /* SearchViewController.swift */,
 				7E01152C1C8284E000ED932C /* HomeViewController.swift */,
+				7E01153A1C82D90500ED932C /* LoginViewController.swift */,
 				7E01152A1C827DAB00ED932C /* TabBarViewController.swift */,
 				7E0115361C82AF2D00ED932C /* BaseTransition.swift */,
 				7E0115371C82AF2D00ED932C /* FadeTransition.swift */,
@@ -170,6 +173,7 @@
 				7E0115311C82868B00ED932C /* ComposeViewController.swift in Sources */,
 				7E0115191C827B4700ED932C /* AppDelegate.swift in Sources */,
 				7E01152D1C8284E000ED932C /* HomeViewController.swift in Sources */,
+				7E01153B1C82D90500ED932C /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
