@@ -182,6 +182,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="feedView" destination="NsD-LP-weL" id="uon-bj-IBv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lOR-a6-oUd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
