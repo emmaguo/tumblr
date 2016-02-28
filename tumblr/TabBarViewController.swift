@@ -12,6 +12,7 @@ class TabBarViewController: UIViewController {
 
     @IBOutlet weak var contentView: UIView!
     @IBOutlet var buttons: [UIButton]!
+    @IBOutlet weak var popupView: UIImageView!
     
     var homeViewController: UIViewController!
     var searchViewController: UIViewController!
@@ -20,6 +21,7 @@ class TabBarViewController: UIViewController {
     var viewControllers: [UIViewController]!
     var selectedIndex: Int = 0
     var fadeTransition: FadeTransition!
+    var originalPopupY: CGFloat!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +39,20 @@ class TabBarViewController: UIViewController {
             trendingViewController
         ]
         onPressTab(buttons[selectedIndex])
+        
+        // Animate explore popup
+        originalPopupY = popupView.frame.origin.y
+        UIView.animateWithDuration(0.9, delay: 0, options: [
+                UIViewAnimationOptions.Autoreverse,
+                UIViewAnimationOptions.Repeat
+            ],
+            animations: {
+                self.popupView.frame.origin.y = self.originalPopupY + 6
+            },
+            completion: {
+                (Bool) -> Void in
+            }
+        )
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -72,6 +88,12 @@ class TabBarViewController: UIViewController {
         vc.view.frame = contentView.bounds
         contentView.addSubview(vc.view)
         vc.didMoveToParentViewController(self)
+        
+        if selectedIndex == 1 {
+            popupView.alpha = 0
+        } else {
+            popupView.alpha = 1
+        }
     }
     
     override func didReceiveMemoryWarning() {

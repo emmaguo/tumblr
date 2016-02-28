@@ -18,6 +18,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.25882352939999997" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="explore_popup" id="Fje-Gc-aHs">
+                                <rect key="frame" x="2" y="451" width="174" height="77"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <view contentMode="scaleToFill" id="JJu-xl-c4x">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -50,7 +54,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xMA-sa-CJe">
-                                        <rect key="frame" x="71" y="4" width="35" height="35"/>
+                                        <rect key="frame" x="73" y="4" width="35" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="search_icon"/>
                                         <state key="selected" image="search_selected_icon"/>
@@ -75,6 +79,7 @@
                     </view>
                     <connections>
                         <outlet property="contentView" destination="v0V-GZ-m5F" id="OKn-Ne-LHP"/>
+                        <outlet property="popupView" destination="Fje-Gc-aHs" id="chG-YF-KlL"/>
                         <outletCollection property="buttons" destination="cpA-SA-jy0" collectionClass="NSMutableArray" id="ghm-RS-iGC"/>
                         <outletCollection property="buttons" destination="xMA-sa-CJe" collectionClass="NSMutableArray" id="bBt-gU-Kde"/>
                         <outletCollection property="buttons" destination="J0n-zm-MDP" collectionClass="NSMutableArray" id="F6y-pC-VEv"/>
@@ -309,6 +314,7 @@
         <image name="account_selected_icon" width="35" height="35"/>
         <image name="chat_icon" width="75" height="96"/>
         <image name="compose_button" width="50" height="35"/>
+        <image name="explore_popup" width="185" height="77"/>
         <image name="home" width="320" height="524"/>
         <image name="home_icon" width="35" height="35"/>
         <image name="home_overlay" width="320" height="100"/>
